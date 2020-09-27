@@ -11,6 +11,7 @@ function App() {
       <Name l_name="Kim" />
       <Name l_name="Lee" />
       <Name l_name="Park" />
+      <Name l_name="Choi" />
     </div>
   );
 }
