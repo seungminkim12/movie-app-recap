@@ -4,14 +4,27 @@ function Name({ l_name }) {
   return <h1>My name is {l_name}</h1>;
 }
 
+const names = [
+  {
+    name: "kim",
+  },
+  {
+    name: "lee",
+  },
+  {
+    name: "park",
+  },
+  {
+    name: "seo",
+  },
+];
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello!</h1>
-      <Name l_name="Kim" />
-      <Name l_name="Lee" />
-      <Name l_name="Park" />
-      <Name l_name="Choi" />
+      {names.map((f_name) => (
+        <Name l_name={f_name.name} />
+      ))}
     </div>
   );
 }
