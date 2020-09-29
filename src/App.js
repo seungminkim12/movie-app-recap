@@ -6,15 +6,19 @@ function Name({ l_name }) {
 
 const names = [
   {
+    id: 1,
     name: "kim",
   },
   {
+    id: 2,
     name: "lee",
   },
   {
+    id: 3,
     name: "park",
   },
   {
+    id: 4,
     name: "seo",
   },
 ];
@@ -23,7 +27,7 @@ function App() {
   return (
     <div className="App">
       {names.map((f_name) => (
-        <Name l_name={f_name.name} />
+        <Name key={f_name.id} l_name={f_name.name} />
       ))}
     </div>
   );
