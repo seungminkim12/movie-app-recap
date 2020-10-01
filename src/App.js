@@ -32,6 +32,11 @@ const names = [
   },
 ];
 
+Name.propTypes = {
+  l_name: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
+
 function App() {
   return (
     <div className="App">
