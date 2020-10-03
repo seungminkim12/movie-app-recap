@@ -6,15 +6,19 @@ class App extends React.Component {
     count: 0,
   };
   add = () => {
-    console.log("ADD");
+    this.setState((current) => ({
+      count: current.count + 1,
+    }));
   };
   remove = () => {
-    console.log("REMOVE");
+    this.setState((current) => ({
+      count: current.count - 1,
+    }));
   };
   render() {
     return (
       <div>
-        <h1>The number is{this.state.count}</h1>
+        <h1>The number is {this.state.count}</h1>
         <button onClick={this.add}>ADD</button>
         <button onClick={this.remove}>REMOVE</button>
       </div>
