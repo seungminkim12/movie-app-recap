@@ -20,7 +20,7 @@ class App extends React.Component {
       <div>
         <h1>The number is {this.state.count}</h1>
         <button onClick={this.add}>ADD</button>
-        <button onClick={this.remove}>REMOVE</button>
+        <button onClick={this.remove}>REME</button>
       </div>
     );
   }
